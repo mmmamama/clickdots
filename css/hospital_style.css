@@ -4,11 +4,6 @@
     margin:0;
 }
 
-#font-family{
-    font-family: 'GongGothicMedium';
-    font-family: 'TTWanjunuricheR';
-} 
-
 
 #logo {
     height : 70px;
@@ -60,9 +55,11 @@ a {
 }
 
 #main>h1 {
+    font-family: 'GongGothicMedium';    
     text-align: center; 
     line-height:80px;
     margin: 0px;
+
 }
 
 #map {
