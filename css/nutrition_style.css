@@ -15,6 +15,13 @@ ul, ol {
     list-style: none;
 }
 
+.nav_text {
+    text-decoration:none;
+    color:#000000;
+    font-size:16px;
+    font-family: 'TTWanjunuricheR';
+}
+
 a {
     text-decoration: none;
     color: #000000;
