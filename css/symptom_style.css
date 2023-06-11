@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
 }
-
 #logo {
     height : 70px;
     width : auto;
@@ -59,14 +58,22 @@ ul,ol {
     font-size: 10px;
 }
 
-h1 {
-    padding-top: 80.0px;
+.masthead {
+    padding-top: 80.8px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 50px;
+    font-family: 'GongGothicMedium';
 }
 
 
 
- /*footer css*/
- .footer {
+/*footer css*/
+.footer {
     padding: 1rem 0;
     background-color: #f5f5f5;
     text-align: center;
@@ -85,6 +92,7 @@ h1 {
 }
 .footer-column {
     flex: 1;
+    font-family: 'TTWanjunuricheR';
 }
   
 .footer-links {
@@ -96,4 +104,29 @@ h1 {
     margin-right: 1rem;
     text-decoration: none;
     color: #333;
+}
+
+/* symptomssssss */
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#results>p{
+    width:100%;
+    margin: 10px;
+    font-family: 'TTWanjunuricheR';
+    font-size: 30px;
+    border:0.5px solid #626262;
+}
+
+#check-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 20px;
 }

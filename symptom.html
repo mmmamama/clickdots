@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클릭닷 - 아픈 곳을 클릭해주세요</title>
+  <link rel="icon" type="image/x-icon" href="media/logo/clickdots_text.png" />
+  <link rel="stylesheet" type="text/css" href="css/symptom_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @font-face {
+      font-family: 'GongGothicMedium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'TTWanjunuricheR';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+    <!-- nav -->
+    <div id="nav2">
+        <a href="index.html" target="_blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
+        <ul>
+            <li><a href="index.html#bod" class="nav_text">신체</a></li>
+            <li><a href="checklist.html" class="nav_text">필수접종 체크리스트</a></li>
+            <li><a href="nutrition.html" class="nav_text">영양제</a></li>
+            <li><a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a></li> 
+        </ul>
+    </div>
+
+    <!-- Masthead-->
+    <div class="masthead">
+        <h3>증상</h3>
+            <div id="check-table">
+                신체부위 :
+                <!-- a. 얼굴 -->
+                <label for="checkbox-a1">얼굴</label>
+                <input type="checkbox" id="checkbox-a1">
+
+                <label for="checkbox-a2">후두부</label>
+                <input type="checkbox" id="checkbox-a2">
+
+                <!-- b. 어깨 -->
+                <label for="checkbox-b1">목</label>
+                <input type="checkbox" id="checkbox-b1">
+
+                <label for="checkbox-b2">어깨</label>
+                <input type="checkbox" id="checkbox-b2">
+
+                <label for="checkbox-b3">쇄골</label>
+                <input type="checkbox" id="checkbox-b3">
+                <!-- c. 팔 -->
+                <label for="checkbox-c1">손</label>
+                <input type="checkbox" id="checkbox-c1">
+
+                <label for="checkbox-c2">손목</label>
+                <input type="checkbox" id="checkbox-c2">
+
+                <label for="checkbox-c3">팔뚝</label>
+                <input type="checkbox" id="checkbox-c3">
+                
+                <!-- d. 가슴 -->
+                <label for="checkbox-d1">가슴</label>
+                <input type="checkbox" id="checkbox-d1">
+
+                <label for="checkbox-d2">명치</label>
+                <input type="checkbox" id="checkbox-d2">
+
+                <label for="checkbox-d3">등상부</label>
+                <input type="checkbox" id="checkbox-d3">
+
+                <!-- e. 배 -->
+                <label for="checkbox-e1">배</label>
+                <input type="checkbox" id="checkbox-e1">
+
+                <label for="checkbox-e2">옆구리</label>
+                <input type="checkbox" id="checkbox-e2">
+
+                <label for="checkbox-e3">등하부</label>
+                <input type="checkbox" id="checkbox-e3">
+                
+                <!-- f. 중요부위 -->
+                <label for="checkbox-f1">남자</label>
+                <input type="checkbox" id="checkbox-f1">
+
+                <label for="checkbox-f2">여자</label>
+                <input type="checkbox" id="checkbox-f2">
+
+                
+                <label for="checkbox-g">허벅지</label>
+                <input type="checkbox" id="checkbox-g">
+            </div>
+
+        <button onclick="search()">검색</button>
+
+        <hr>
+        <div id="results">
+            <p data-category="a" class="result">머리 내용</p>
+            <p data-category="a1" class="result">후두부 내용</p>
+            <p data-category="b" class="result">B의 내용</p>
+            <p data-category="c" class="result">C의 내용</p>
+            <p data-category="d" class="result">D의 내용</p>
+            <p data-category="e" class="result">E의 내용</p>
+            <p data-category="f" class="result">F의 내용</p>
+            <p data-category="g" class="result">G의 내용</p>
+        </div>
+    </div>
+
+    <!--footer하단태그-->
+    <footer class="footer py-4">
+        <div class="container">            
+            <div class="footer-row">
+                <div class="footer-column">
+                    <p class="footer-logo"> copyrights &copy; Click dots 2023 with 병윤, 다현, 은우 </p>
+                </div>
+                <div class="footer-column">
+                    <p class="footer-middle"> 2023.06.09 </p>
+                </div>
+                <div class="footer-column">
+                    <nav class="footer-links">
+                        <a href="#!" class="footer-link">Privacy Policy</a>
+                        <a href="#!" class="footer-link">Terms of Use</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/symptom_script.js"></script>
+</body>
+</html>
