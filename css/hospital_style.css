@@ -4,6 +4,10 @@
     margin:0;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 934ff68614cf8911e493fb0ae76e987f279a99aa
 #logo {
     height : 70px;
     width : auto;
@@ -61,6 +65,14 @@ a {
     padding-top: 80.8px;
 }
 
+<<<<<<< HEAD
+#main>h1 {
+    font-family: 'GongGothicMedium';    
+    text-align: center; 
+    line-height:80px;
+    margin: 0px;
+
+=======
 #main>h2 {
     display: flex;
     flex-direction: column;
@@ -77,6 +89,7 @@ a {
     font-family: 'GongGothicMedium';
     letter-spacing: 0.05em;
     font-size: 55px;
+>>>>>>> 934ff68614cf8911e493fb0ae76e987f279a99aa
 }
 
 #map {
