@@ -1,6 +1,89 @@
 function initMap() {
     var map = new naver.maps.Map('map');
-
+// XML 데이터를 처리하는 함수
+function processXMLData(xmlData) {
+    // 병원 정보를 담을 배열 선언
+    var hospitals = [];
+  
+    // XML에서 병원 요소들을 선택
+    var hospitalElements = xmlData.getElementsByTagName("hospital");
+  
+    // 각 병원 요소를 순회하며 정보 추출
+    for (var i = 0; i < hospitalElements.length; i++) {
+      var hospitalElement = hospitalElements[i];
+  
+      // 병원 이름 추출
+      var name = hospitalElement.getElementsByTagName("name")[0].textContent;
+  
+      // 진료과목 추출
+      var specialty = hospitalElement.getElementsByTagName("specialty")[0].textContent;
+  
+      // 진료시간 추출
+      var openingHours = hospitalElement.getElementsByTagName("openingHours")[0].textContent;
+  
+      // 병원 주소 추출
+      var address = hospitalElement.getElementsByTagName("address")[0].textContent;
+  
+      // 전화번호 추출
+      var phoneNumber = hospitalElement.getElementsByTagName("phoneNumber")[0].textContent;
+  
+      // 좌표 추출 (geocode에 필요한 정보)
+      var latitude = parseFloat(hospitalElement.getElementsByTagName("latitude")[0].textContent);
+      var longitude = parseFloat(hospitalElement.getElementsByTagName("longitude")[0].textContent);
+  
+      // 추출한 정보를 객체로 저장
+      var hospitalInfo = {
+        name: name,
+        specialty: specialty,
+        openingHours: openingHours,
+        address: address,
+        phoneNumber: phoneNumber,
+        latitude: latitude,
+        longitude: longitude
+      };
+  
+      // 병원 정보 배열에 추가
+      hospitals.push(hospitalInfo);
+    }
+  
+    return hospitals;
+  }
+  
+  // XML 데이터를 가져오는 함수
+  function fetchData() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var xmlData = xhr.responseXML;
+        // 가져온 XML 데이터를 처리하는 함수 호출
+        var hospitals = processXMLData(xmlData);
+        // 병원 정보 배열을 활용하여 지도에 표시
+        showHospitalsOnMap(hospitals);
+      }
+    };
+    xhr.open("GET", "safemap.go.kr/openApiService/data/getTotHospitalData.do", true);
+    xhr.send();
+  }
+  
+  // 병원 정보를 지도에 표시하는 함수
+  function showHospitalsOnMap(hospitals) {
+    var map = new naver.maps.Map('map');
+  
+    for (var i = 0; i < hospitals.length; i++) {
+      var hospital = hospitals[i];
+      var address = hospital.address;
+      var latitude = hospital.latitude;
+      var longitude = hospital.longitude;
+  
+      insertAddress(address, latitude, longitude);
+    }
+  }
+  
+  // 나머지 코드는 그대로 유지합니다.
+  
+  // fetchData 함수 호출하여 XML 데이터 가져오기 시작
+  fetchData();
+  
     function insertAddress(address, latitude, longitude) {
         var mapList = "";
         mapList += "<tr>"
