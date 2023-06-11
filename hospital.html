@@ -1,25 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>영양제</title>
-    <link rel="stylesheet" type="text/css" href="css/hospital_style.css">
+    <title>대한민국 병원 위치 및 정보</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/hospital_style.css">
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=oct50w42eh&submodules=geocoder"></script>
+    <style>
+        @font-face {
+        font-family: 'GongGothicMedium';
+        src: url('https://cdn.jsdelivr. net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+    
+        @font-face {
+        font-family: 'TTWanjunuricheR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+    </style>
+ 
 </head>
+
 <body>
+
     <!-- nav -->
-    <div id="nav2">
-        <a href="index.html" target="_blank">
-        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
-        <ul>
-            <li><a href="index.html#bod">신체</a></li>
-            <li><a href="checklist.html">필수접종 체크리스트</a></li>
-            <li><a href="nutrition.html">영양제</a></li>
-            <li><a href="exercise.html">운동</a></li>
-            <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
-        </ul>
+   <div id="nav2">
+    <a href="index.html" target="_blank">
+    <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
+    <ul>
+        <li><a href="#bod">신체</a></li>
+        <li><a href="checklist.html">필수접종 체크리스트</a></li>
+        <li><a href="nutrition.html">영양제</a></li>
+        <li><a href="exercise.html">운동</a></li>
+        <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
+    </ul>
+</div>
+
+<div id="main" class="main">
+    <h1>근처 병원,약국 찾기</h1>
+
+    
+    <div id="maplist">
+        <div id="map"></div>
+        <div id="map-right">
+        <form id="search-form" action="">
+            <input type="text" id="search-input" placeholder="지역을 검색하세요">
+            <button id="search-button" type="button">검색</button>
+        </form>
+    
+        <div id="list-container">
+            
+            <div id="hospital-list">
+                
+                <ul>
+                    <li>                </li>
+                    <li>한&진서울치과의원</li>
+                    <li>치과의원</li>
+                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
+                    <li>시작 10:00 ~ 마감18:00</li>
+                    <li>병원 전화번호 02-381-1423 </li>
+                </ul>
+                <ul>
+                    <li>                </li>
+                    <li>한&진서울치과의원</li>
+                    <li>치과의원</li>
+                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
+                    <li>진료 시작 10:00</li>
+                    <li>진료 마감 18:00</li>
+                </ul>
+                <ul>
+                    <li>                </li>
+                    <li>한&진서울치과의원</li>
+                    <li>치과의원</li>
+                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
+                    <li>진료 시작 10:00</li>
+                    <li>진료 마감 18:00</li>
+                </ul>
+                <ul>
+                    <li>                </li>
+                    <li>한&진서울치과의원</li>
+                    <li>치과의원</li>
+                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
+                    <li>진료 시작 10:00</li>
+                    <li>진료 마감 18:00</li>
+                </ul>
+                <ul>
+                    <li>                </li>
+                    <li>한&진서울치과의원</li>
+                    <li>치과의원</li>
+                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
+                    <li>진료 시작 10:00</li>
+                    <li>진료 마감 18:00</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</div>
+
+</div>
+    <script src="js/hospital_script.js"></script>
+    <script>
+        // 네이버 지도 API 로드 후 initMap 함수 호출
+        naver.maps.onJSContentLoaded = initMap;
+    </script>
+    <!--footer하단태그-->
+    <footer class="footer py-4">
+        <div class="container">            
+            <div class="footer-row">
+                <div class="footer-column">
+                    <p class="footer-logo"> copyrights &copy; Click dots 2023 with 병윤, 다현, 은우 </p>
+                </div>
+                <div class="footer-column">
+                    <p class="footer-middle"> 2023.06.09 </p>
+                </div>
+                <div class="footer-column">
+                    <nav class="footer-links">
+                        <a href="#!" class="footer-link">Privacy Policy</a>
+                        <a href="#!" class="footer-link">Terms of Use</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 나머지 내용과 필요한 스타일시트, 스크립트를 추가하세요 -->
 </body>
 </html>
+
+
+
+
+
+
+
