@@ -63,13 +63,16 @@ ul,ol {
     padding-top: 80px;
     display: flex;
     justify-content: center;
-    margin-left: 35%;
+    margin-left: 40%;
     margin-right: 30px;
 }
 
-#CL_masthead>h2 {
+#h2_colum {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     top: 0;
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     padding-top: 10px;
     justify-content: center;
@@ -79,7 +82,8 @@ ul,ol {
     margin-bottom: 16px;
     font-family: 'GongGothicMedium';
     letter-spacing: 0.05em;
-  }
+}
+
 
 ol {
     list-style-type: decimal;
@@ -100,15 +104,6 @@ ol {
 @keyframes delay-show {
     from { opacity: 0;}
     to {opacity: 1;}
-}
-
-
-.item1 {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #injection {
@@ -137,14 +132,46 @@ ol {
     margin-right: 50px;
 }
 
-.list_text {
+#vc-list ol, #vc-list li{
+    text-align: left;
     margin-bottom: 10px;
+    font-family: 'TTWanjunuricheR';
 }
 
 #vc-num>ul,li{
     text-align: center;
     margin-bottom: 10px;
 }
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#vc-definition {
+    margin-bottom: 30px;
+    font-family: 'TTWanjunuricheR';
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    margin: 20px;
+
+}
+
+table {
+    font-family: 'TTWanjunuricheR';
+}
+
+
 
  /*footer css*/
  .footer {
@@ -163,6 +190,7 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'TTWanjunuricheR';
 }
 .footer-column {
     flex: 1;

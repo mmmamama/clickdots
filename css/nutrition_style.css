@@ -1,50 +1,161 @@
+/* nav바 */
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 #logo {
-    height : 70px;
-    width : auto;
+    height: 70px;
+    width: auto;
     padding-top: 10px;
     position: fixed;
 }
 
-ul,ol {
-    list-style:none;
+ul, ol {
+    list-style: none;
+}
+
+.nav_text {
+    text-decoration:none;
+    color:#000000;
+    font-size:16px;
+    font-family: 'TTWanjunuricheR';
 }
 
 a {
-    text-decoration:none;
-    color:#000000;
-    font-size:15px;
-    
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
 }
 
-#nav2 {
-    background-color: #ffffff;
+#nav2{
+    background-color: #93ef4300;
     height: 80.8px;
     width: 100%;
     position: fixed;
-    
 }
-
-#nav2>a {
-    display: block; /* a태그는 글자성격 = inline */
+#nav2 > a {
+    display: block;
     float: left;
     line-height: 80px;
     padding: 0px;
     height: 100px;
 }
 
-#nav2>ul {
+#nav2 > ul {
     float: right;
     right: 20px;
-    
 }
 
-#nav2>ul li {
+#nav2 > ul li {
     float: left;
     padding: 0 30px;
     line-height: 80px;
-    font-size: 10px;
+}
+
+/*영양제 소개페이지 제목, 부제목부분*/
+.title-container {
+    padding-top: 100px;
+}
+
+.title {
+    text-align: center;
+    padding: 60px;
+    font-size: 80px;
+    font-family: 'GongGothicMedium';
+}
+
+.sub-title{
+    font-family: 'TTWanjunuricheR';
+    text-align: center;
+    font-size: 20px;
+    color:#64e5ab
+}
+
+/* 영양제 소개 메인페이지 아이콘 */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 120px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.icon i {
+    font-size: 100px;
+    margin: auto;
+}
+
+.icon h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.icon:hover { /*아이콘이 천천히 확대 + 동시에 배경색 색칠*/
+    transform: scale(1.1); /*아이콘이 1.1배로 확대*/
+    background-color: #64e5ab;
+    filter: brightness(85%); /*아이콘의 진한 정도를 조절*/
+}
+
+
+
+/* 영양제 소개 내용 */
+#nutrition-content {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#nutrition-content.active {
+    display: block;
+}
+
+/*footer css*/
+.footer {
+    padding: 1rem 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+} 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-column {
+    flex: 1;
+}
+  
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.footer-link {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #333;
 }

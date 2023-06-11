@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>대한민국 병원 위치 및 정보</title>
+    <title>클릭닷 - 근처 병원,약국 찾기</title>
+    <link rel="icon" type="image/x-icon" href="media/logo/clickdots_text.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/hospital_style.css">
@@ -10,7 +11,7 @@
     <style>
         @font-face {
         font-family: 'GongGothicMedium';
-        src: url('https://cdn.jsdelivr. net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         }
@@ -29,74 +30,123 @@
 
     <!-- nav -->
    <div id="nav2">
-    <a href="index.html" target="_blank">
+    <a href="index.html" target="blank">
     <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
     <ul>
-        <li><a href="#bod">신체</a></li>
-        <li><a href="checklist.html">필수접종 체크리스트</a></li>
-        <li><a href="nutrition.html">영양제</a></li>
-        <li><a href="exercise.html">운동</a></li>
-        <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
+        <li><a href="index.html#bod" class="nav_text">신체</a></li>
+        <li><a href="checklist.html" class="nav_text">필수접종 체크리스트</a></li>
+        <li><a href="nutrition.html" class="nav_text">영양제</a></li>
+        <li><a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a></li> 
     </ul>
 </div>
 
 <div id="main" class="main">
-    <h1>근처 병원,약국 찾기</h1>
+    <h2>근처 병원,약국 찾기</h2>
 
     
     <div id="maplist">
         <div id="map"></div>
         <div id="map-right">
         <form id="search-form" action="">
-            <input type="text" id="search-input" placeholder="지역을 검색하세요">
+            <input type="text" id="search-input" placeholder="   지역을 검색하세요">
             <button id="search-button" type="button">검색</button>
         </form>
     
         <div id="list-container">
-            
             <div id="hospital-list">
+              <ul>
+                <li onclick="toggleDetails(this)">a 의원</li>
+                <div class="details">
+                  <p>종류: 치과의원</p>
+                  <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                  <p>진료 시작 시간: 10:00</p>
+                  <p>진료 마감 시간: 18:00</p>
+                  <p>병원 전화번호: 02-381-1423</p>
+                </div>
                 
-                <ul>
-                    <li>                </li>
-                    <li>한&진서울치과의원</li>
-                    <li>치과의원</li>
-                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
-                    <li>시작 10:00 ~ 마감18:00</li>
-                    <li>병원 전화번호 02-381-1423 </li>
-                </ul>
-                <ul>
-                    <li>                </li>
-                    <li>한&진서울치과의원</li>
-                    <li>치과의원</li>
-                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
-                    <li>진료 시작 10:00</li>
-                    <li>진료 마감 18:00</li>
-                </ul>
-                <ul>
-                    <li>                </li>
-                    <li>한&진서울치과의원</li>
-                    <li>치과의원</li>
-                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
-                    <li>진료 시작 10:00</li>
-                    <li>진료 마감 18:00</li>
-                </ul>
-                <ul>
-                    <li>                </li>
-                    <li>한&진서울치과의원</li>
-                    <li>치과의원</li>
-                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
-                    <li>진료 시작 10:00</li>
-                    <li>진료 마감 18:00</li>
-                </ul>
-                <ul>
-                    <li>                </li>
-                    <li>한&진서울치과의원</li>
-                    <li>치과의원</li>
-                    <li>서울 특별시 용산구 회나무로 30, 3층(이태원동)</li>
-                    <li>진료 시작 10:00</li>
-                    <li>진료 마감 18:00</li>
-                </ul>
+                <li onclick="toggleDetails(this)">b 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+                
+                <li onclick="toggleDetails(this)">c 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+                
+                <li onclick="toggleDetails(this)">d 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+                
+                <li onclick="toggleDetails(this)">e 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+
+                <li onclick="toggleDetails(this)">f 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+
+                <li onclick="toggleDetails(this)">g 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+
+                <li onclick="toggleDetails(this)">h 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+
+
+                <li onclick="toggleDetails(this)">i 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
+
+                <li onclick="toggleDetails(this)">j 의원</li>
+                <div class="details">
+                    <p>종류: 치과의원</p>
+                    <p>주소: 서울 특별시 용산구 회나무로 30, 3층(이태원동)</p>
+                    <p>진료 시작 시간: 10:00</p>
+                    <p>진료 마감 시간: 18:00</p>
+                    <p>병원 전화번호: 02-381-1423</p>
+                </div>
             </div>
+        </div>
         </div>
     </div>
 </div>

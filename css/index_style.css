@@ -17,6 +17,7 @@ ul,ol {
     text-decoration:none;
     color:#000000;
     font-size:16px;
+    font-family: 'TTWanjunuricheR';
 }
 
 .nav_text:hover {
@@ -59,6 +60,7 @@ ul,ol {
 
 .masthead {
     padding-top: 80.8px;
+    
 }
 
 video.bg-video {
@@ -85,7 +87,7 @@ video.bg-video {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'TTWanjunuricheR';
 }
 
 #scroll-button:hover { /*아이콘이 천천히 확대 + 동시에 배경색 색칠*/
@@ -95,9 +97,8 @@ video.bg-video {
 }
 
 .bod {
-    border: 2px solid black;
     padding-top: 80.8px;
-    height: 950px;
+    height: 900px;
 }
 
 #head {
@@ -139,28 +140,25 @@ video.bg-video {
 
 #chest {
     top: 0;
-    width: 99px;
-    height: 100px;
+    width: 104px;
+    height: 110px;
     vertical-align:middle;
     margin-bottom: auto;
-    border: 2px solid black;
     
 }
 
 #belly {
     top: 0;
-    width: 99px;
+    width: 104px;
     height: 100px;
     vertical-align:middle;
-    border: 2px solid black;
 }
 
 #important {
     top: 0;
-    width: 100px;
+    width: 104px;
     height: 90px;
     vertical-align:middle;
-    border: 2px solid black;
 
 }
 
@@ -198,7 +196,7 @@ video.bg-video {
 
 #jongari {
     top: 0;
-    width: 125.7px;
+    width: 125.6px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -216,7 +214,7 @@ video.bg-video {
 
 #foot{
     top: 0;
-    width: 156px;
+    width: 157px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -224,10 +222,11 @@ video.bg-video {
 }
 
 #bod>h3 {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     margin-top: 0px;
     letter-spacing: 0.1em;
+    font-family: 'GongGothicMedium';
 }
 
 .popup {
@@ -324,6 +323,7 @@ video.bg-video {
     text-align: center;
     color:#6c757d;
     margin-bottom: 20px;
+    font-family: 'TTWanjunuricheR';
 }
  /*footer css*/
 .footer {
@@ -345,6 +345,7 @@ video.bg-video {
 }
 .footer-column {
     flex: 1;
+    font-family: 'TTWanjunuricheR';
 }
   
 .footer-links {
@@ -356,4 +357,10 @@ video.bg-video {
     margin-right: 1rem;
     text-decoration: none;
     color: #333;
+}
+
+hr {
+        margin-bottom: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
 }

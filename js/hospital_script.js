@@ -339,3 +339,9 @@ function hasAddition (addition) {
 }
 
 naver.maps.onJSContentLoaded = initGeocoder;
+
+
+function toggleDetails(element) {
+    var details = element.nextElementSibling;
+    details.classList.toggle("show");
+  }
