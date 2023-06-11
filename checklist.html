@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영양제</title>
+    <link rel="icon" type="image/x-icon" href="media/logo/clickdots_text.png" />
+    <link rel="stylesheet" type="text/css" href="css/checklist_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <style>
+        @font-face {
+            font-family: 'GongGothicMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TTWanjunuricheR';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <div id="nav2">
+        <a href="index.html" target="_blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
+        <ul>
+            <li><a href="index.html#bod" class="nav_text">신체</a></li>
+            <li><a href="checklist.html" class="nav_text">필수접종 체크리스트</a></li>
+            <li><a href="nutrition.html" class="nav_text">영양제</a></li>
+            <li><a href="exercise.html" class="nav_text">운동</a></li>
+            <li><a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a></li> 
+        </ul>
+        </a>
+    </div>
+
+    <div id="CL_masthead">
+        <h2>필수접종 체크리스트</h2>
+        <img id="injection" src="media/checklist/injection_nobg.png" alt="로고이미지">
+    </div>
+
+    <!-- Checklist Table -->
+    <div id="vc-table">
+        <div id="vc-list">
+            <p>접종 리스트</p>
+            <ol start="1">
+                <li><a href="checklist/1-bcg.html" class= "list_text">결핵(BCG/피내용)</a></li>
+                <li><a href="checklist/2-hepB.html" class="list_text">B형간염(HepB)</a></li>
+                <li><a href="checklist/3-polio.html" class="lsit_text">폴리오(IPV)</a></li>
+                <li><a href="checklist/4-IPV-hib.html" class="list_text">디프테리아/파상풍/백일해/소아마비 혼합백신(DTaP-IPV)</a></li>
+                <li><a href="checklist/5-dtab.html" class="list_text">디프테리아/파상풍/백일해/소아마비/Hib 혼합백신(DTaP-IPV/Hib)</a></li> 
+            </ol>
+        </div>
+
+        <div id="vc-num">
+            <p>접종 횟수</p>
+            <ul>
+                <li>1</li>
+                <li>3</li>
+                <li>4</li>
+                <li>4</li>
+                <li>3</li>
+                <li>5</li>
+                <li>2</li>
+                <li>1</li>
+                <li>5</li>
+                <li>2</li>
+                <li>1</li>
+                <li>1</li>
+                <li>4</li>
+                <li>4</li>
+                <li>2</li>
+                <li>2</li>
+                <li>1~2</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+        <div id="vc-complete">
+            <p>접종 여부</p>
+            <ul>
+                <li><input type="checkbox" id="checkbox" checked></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+                <li><input type="checkbox" id="checkbox" ></label></li>
+            </ul>
+        </div>
+
+    </div>
+            
+
+    
+    <script src="js/checklist_script.js"></script>
+
+    <!--footer하단태그-->
+    <footer class="footer py-4">
+        <div class="container">            
+            <div class="footer-row">
+                <div class="footer-column">
+                    <p class="footer-logo"> copyrights &copy; Click dots 2023 with 병윤, 다현, 은우 </p>
+                </div>
+                <div class="footer-column">
+                    <p class="footer-middle"> 2023.06.09 </p>
+                </div>
+                <div class="footer-column">
+                    <nav class="footer-links">
+                        <a href="#!" class="footer-link">Privacy Policy</a>
+                        <a href="#!" class="footer-link">Terms of Use</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 나머지 내용과 필요한 스타일시트, 스크립트를 추가하세요 -->
+</body>
+</html>
