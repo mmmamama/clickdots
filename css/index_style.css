@@ -257,6 +257,15 @@ video.bg-video {
   font-size: 25px;
   font-family: "TTWanjunuricheR";
   text-decoration: none;
+  color: #000000;
+}
+
+.li_text:hover {
+  color: #269402;
+}
+
+.popup li:hover {
+  color: #269402;
 }
 .introduction h1 {
   font-size: 3.75em;
