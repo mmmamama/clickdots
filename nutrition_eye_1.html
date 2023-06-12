@@ -1,115 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="css/nutrition_eye.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition</title>
     <style>
       @font-face {
-      font-family: 'GongGothicMedium';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+        font-family: "GongGothicMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
       }
 
       @font-face {
-        font-family: 'TTWanjunuricheR';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+        font-family: "TTWanjunuricheR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2")
+          format("woff2");
         font-weight: normal;
         font-style: normal;
       }
     </style>
     <script src="nutrition_script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--navigation bar-->
     <nav id="nav2">
-        <a href="index.html" target="_blank">
-            <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
-        </a>
-        <ul>
-            <li><a href="#bod">신체</a></li>
-            <li><a href="checklist.html">필수접종 체크리스트</a></li>
-            <li><a href="nutrition.html">영양제</a></li>
-            <li><a href="exercise.html">운동</a></li>
-            <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
-        </ul>
+      <a href="index.html" target="blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지" />
+      </a>
+      <ul>
+        <li><a href="index.html#bod" class="nav_text">신체</a></li>
+        <li>
+          <a href="checklist.html" class="nav_text">필수접종 체크리스트</a>
+        </li>
+        <li><a href="nutrition.html" class="nav_text active">영양제</a></li>
+        <li>
+          <a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a>
+        </li>
+      </ul>
     </nav>
+    >
 
     <!-- 영양제icon -->
     <section id="main-section">
-        <div class="left-section">
-            <div class="eye-container">
-              <div style="cursor: pointer;" onclick="location.href='nutrition_eye_1.html';" class="eye-1">
-                <p>루테인 & 지아잔틴</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_eye_2.html';" class="eye-2">
-                  <p>아스타잔틴<br> & <br>빌베리추출물</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_eye_3.html';" class="eye-3">
-                <p>비타민A<br> & <br>베타카로틴</p>
-              </div>
-            </div>
+      <div class="left-section">
+        <div class="eye-container">
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_eye_1.html';"
+            class="eye-1"
+          >
+            <p>루테인 & 지아잔틴</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_eye_2.html';"
+            class="eye-2"
+          >
+            <p>
+              아스타잔틴<br />
+              & <br />빌베리추출물
+            </p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_eye_3.html';"
+            class="eye-3"
+          >
+            <p>
+              비타민A<br />
+              & <br />베타카로틴
+            </p>
+          </div>
         </div>
-          <div class="right-section">
-            <div class="brief-info">
-              <div class="section">
-                <h3>복용효과</h3>
-                <br><br>
-                <p>1. 안구노화 예방(시력)<br><br>
-                  2. 안구 피로도 감소<br><br>
-                  3. 황반변성 방지<br><br>
-                  4. 백내장 예방
-                  </p>
-              </div>
-              <div class="section">
-                <h3>추천대상</h3>
-                <br><br>
-                <p>1. 일상생활에서 눈이 불편한사람<br><br>
-                  2. 눈이 자주 침침해 불편한사람<br><br>
-                  3. 모니터를 장시간 보는 컴퓨터 전공자<br><br>
-                  4. 공부와 업무로 눈이 지친사람</p>
-              </div>
-              <div class="section">
-                <h3>주의사항</h3>
-                <br><br>
-                <p>1. 한번에 다량 섭취 금지<br><br>
-                  2. 다량 섭취 시 두통, 복통 가능성 존재<br><br>
-                  3. 메스꺼움, 졸음, 소화불량 동반가능<br><br>
-                  4. 아침 식사 후 복용시 효과 증가<br><br>
-                </p>
-              </div>
-            </div>
-            <div class="product-container">
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/xLUj" target="_blank">
-                        <img src="media/nutrition/lutein_1.png" alt="lutein_1" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/zoBq" target="_blank">
-                        <img src="media/nutrition/lutein_2.png" alt="lutein_2" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/RoqQ" target="_blank">
-                        <img src="media/nutrition/lutein_3.png" alt="lutein_3" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
+      </div>
+      <div class="right-section">
+        <div class="brief-info">
+          <div class="section">
+            <h3>복용효과</h3>
+            <br /><br />
+            <p>
+              1. 안구노화 예방(시력)<br /><br />
+              2. 안구 피로도 감소<br /><br />
+              3. 황반변성 방지<br /><br />
+              4. 백내장 예방
+            </p>
+          </div>
+          <div class="section">
+            <h3>추천대상</h3>
+            <br /><br />
+            <p>
+              1. 일상생활에서 눈이 불편한사람<br /><br />
+              2. 눈이 자주 침침해 불편한사람<br /><br />
+              3. 모니터를 장시간 보는 컴퓨터 전공자<br /><br />
+              4. 공부와 업무로 눈이 지친사람
+            </p>
+          </div>
+          <div class="section">
+            <h3>주의사항</h3>
+            <br /><br />
+            <p>
+              1. 한번에 다량 섭취 금지<br /><br />
+              2. 다량 섭취 시 두통, 복통 가능성 존재<br /><br />
+              3. 메스꺼움, 졸음, 소화불량 동반가능<br /><br />
+              4. 아침 식사 후 복용시 효과 증가<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/xLUj" target="_blank">
+                <img
+                  src="media/nutrition/lutein_1.png"
+                  alt="lutein_1"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
             </div>
           </div>
-          
-      </section>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/zoBq" target="_blank">
+                <img
+                  src="media/nutrition/lutein_2.png"
+                  alt="lutein_2"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/RoqQ" target="_blank">
+                <img
+                  src="media/nutrition/lutein_3.png"
+                  alt="lutein_3"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--footer하단태그-->
-</body>
+  </body>
 </html>

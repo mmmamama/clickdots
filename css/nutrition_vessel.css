@@ -1,9 +1,7 @@
-/* nav바 */
 * {
   padding: 0;
   margin: 0;
 }
-
 #logo {
   height: 70px;
   width: auto;
@@ -16,23 +14,41 @@ ol {
   list-style: none;
 }
 
-a {
+.nav_text {
   text-decoration: none;
   color: #000000;
-  font-size: 15px;
+  font-size: 16px;
+  font-family: "TTWanjunuricheR";
 }
+
+.nav_text:hover {
+  color: #269402;
+}
+
+.nav_text.active {
+  color: #269402;
+}
+
 #nav2 {
-  background-color: white;
+  background-color: #ffffff;
   height: 80.8px;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
+
 #nav2 > a {
-  display: block;
+  display: block; /* a태그는 글자성격 = inline */
   float: left;
   line-height: 80px;
   padding: 0px;
   height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
 }
 
 #nav2 > ul {
@@ -44,6 +60,7 @@ a {
   float: left;
   padding: 0 30px;
   line-height: 80px;
+  font-size: 10px;
 }
 
 /* 나눠진 구역 스타일링 */

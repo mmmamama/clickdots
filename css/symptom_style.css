@@ -25,7 +25,7 @@ ol {
   color: #269402;
 }
 
-.nav_text:active {
+.nav_text.active {
   color: #269402;
 }
 

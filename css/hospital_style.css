@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
 #logo {
   height: 70px;
   width: auto;
@@ -15,19 +14,6 @@ ol {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-}
-
-#nav2 {
-  background-color: #ffffff;
-  height: 80.8px;
-  width: 100%;
-  position: fixed;
-}
-
 .nav_text {
   text-decoration: none;
   color: #000000;
@@ -35,8 +21,24 @@ a {
   font-family: "TTWanjunuricheR";
 }
 
+.nav_text:hover {
+  color: #269402;
+}
+
+.nav_text.active {
+  color: #269402;
+}
+
+#nav2 {
+  background-color: #ffffff;
+  height: 80.8px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
 #nav2 > a {
-  display: block;
+  display: block; /* a태그는 글자성격 = inline */
   float: left;
   line-height: 80px;
   padding: 0px;
