@@ -111,8 +111,8 @@ ol {
 }
 
 #injection {
-  width: 120px;
-  transform: rotate(10deg);
+  width: 150px;
+  transform: rotate(8deg);
   position: relative;
   display: flex;
   margin-left: auto;
@@ -128,7 +128,7 @@ ol {
   }
   to {
     right: 80px;
-    top: 20px;
+    top: 18px;
   }
 }
 

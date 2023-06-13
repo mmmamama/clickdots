@@ -366,6 +366,6 @@ video.bg-video {
 
 hr {
   margin-bottom: 60px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
