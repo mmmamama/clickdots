@@ -66,8 +66,9 @@ h3 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 8px;
-  font-size: 50px;
+  font-size: 60px;
   font-family: "GongGothicMedium";
+  letter-spacing: 0.05em;
 }
 
 /* footer */
@@ -80,7 +81,7 @@ footer {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   bottom: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .footer-row {
@@ -114,7 +115,7 @@ hr {
   margin: 20px;
 }
 #results {
-  min-height: 475px;
+  min-height: 460px;
 }
 
 #results > p {
@@ -122,8 +123,10 @@ hr {
   margin-right: 20px;
   margin-left: 20px;
   font-family: "TTWanjunuricheR";
-  font-size: 30px;
+  font-size: 25px;
   border: 0.5px solid #626262;
+  letter-spacing: 0.1em;
+  color: #535252;
 }
 
 .subsubtitle > p {
