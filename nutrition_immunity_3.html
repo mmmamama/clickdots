@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="css/nutrition_immunity.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition</title>
     <style>
       @font-face {
-      font-family: 'GongGothicMedium';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+        font-family: "GongGothicMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
       }
 
       @font-face {
-        font-family: 'TTWanjunuricheR';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+        font-family: "TTWanjunuricheR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2")
+          format("woff2");
         font-weight: normal;
         font-style: normal;
       }
     </style>
     <script src="nutrition_script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--navigation bar-->
     <nav id="nav2">
-        <a href="index.html" target="_blank">
-            <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
-        </a>
-        <ul>
-            <li><a href="#bod">신체</a></li>
-            <li><a href="checklist.html">필수접종 체크리스트</a></li>
-            <li><a href="nutrition.html">영양제</a></li>
-            <li><a href="exercise.html">운동</a></li>
-            <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
-        </ul>
+      <a href="index.html" target="blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지" />
+      </a>
+      <ul>
+        <li><a href="index.html#bod" class="nav_text">신체</a></li>
+        <li>
+          <a href="checklist.html" class="nav_text">필수접종 체크리스트</a>
+        </li>
+        <li><a href="nutrition.html" class="nav_text active">영양제</a></li>
+        <li>
+          <a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- 영양제icon -->
     <section id="main-section">
-        <div class="left-section">
-            <div class="immunity-container">
-              <div style="cursor: pointer;" onclick="location.href='nutrition_immunity_1.html';" class="immunity-1">
-                <p>종합비타민</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_immunity_2.html';" class="immunity-2">
-                  <p>비타민B</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_immunity_3.html';" class="immunity-3">
-                <p>비타민D</p>
-              </div>
-            </div>
+      <div class="left-section">
+        <div class="immunity-container">
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_immunity_1.html';"
+            class="immunity-1"
+          >
+            <p>종합비타민</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_immunity_2.html';"
+            class="immunity-2"
+          >
+            <p>비타민B</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_immunity_3.html';"
+            class="immunity-3 active"
+          >
+            <p>비타민D</p>
+          </div>
         </div>
-          <div class="right-section">
-            <div class="brief-info">
-              <div class="section">
-                <h3>복용효과</h3>
-                <br><br>
-                <p>
-                  1. 칼슘 흡수 촉진, 골밀도 강화<br><br>
-                  2. 골연화증, 골다공증 예방<br><br>
-                  3. 면역력 강화 및 조절<br><br>
-                  4. 세포 성장 조절 및 우울증 예방<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>추천대상</h3>
-                <br><br>
-                <p>
-                  1. 골격 형성이 필요한 성장기 아이들<br><br>
-                  2. 칼슘 흡수율이 낮은 노인<br><br>
-                  3. 실외보다 실내 활동이 많은 분<br><br>
-                  4. 갱년기, 폐경기 여성 분<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>주의사항</h3>
-                <br><br>
-                <p>
-                  1. 고칼슘혈증이 있는 경우 주의<br><br>
-                  2. 고용량 섭취시 신장 결석 위험<br><br>
-                  3. 구토, 식욕감퇴 발생 가능<br><br>
-                  4. 허약감, 체중감하 발생 가능<br><br>
-                </p>
-              </div>
-            </div>
-            <div class="product-container">
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/sgoA" target="_blank">
-                        <img src="media/nutrition/immunity_7.png" alt="immunity_7" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/ohiK" target="_blank">
-                        <img src="media/nutrition/immunity_8.png" alt="immunity_8" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/4cMq" target="_blank">
-                        <img src="media/nutrition/immunity_9.png" alt="immunity_9" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
+      </div>
+      <div class="right-section">
+        <div class="brief-info">
+          <div class="section">
+            <h3>복용효과</h3>
+            <br /><br />
+            <p>
+              1. 칼슘 흡수 촉진, 골밀도 강화<br /><br />
+              2. 골연화증, 골다공증 예방<br /><br />
+              3. 면역력 강화 및 조절<br /><br />
+              4. 세포 성장 조절 및 우울증 예방<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>추천대상</h3>
+            <br /><br />
+            <p>
+              1. 골격 형성이 필요한 성장기 아이들<br /><br />
+              2. 칼슘 흡수율이 낮은 노인<br /><br />
+              3. 실외보다 실내 활동이 많은 분<br /><br />
+              4. 갱년기, 폐경기 여성 분<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>주의사항</h3>
+            <br /><br />
+            <p>
+              1. 고칼슘혈증이 있는 경우 주의<br /><br />
+              2. 고용량 섭취시 신장 결석 위험<br /><br />
+              3. 구토, 식욕감퇴 발생 가능<br /><br />
+              4. 허약감, 체중감하 발생 가능<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/sgoA" target="_blank">
+                <img
+                  src="media/nutrition/immunity_7.png"
+                  alt="immunity_7"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
             </div>
           </div>
-          
-      </section>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/ohiK" target="_blank">
+                <img
+                  src="media/nutrition/immunity_8.png"
+                  alt="immunity_8"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/4cMq" target="_blank">
+                <img
+                  src="media/nutrition/immunity_9.png"
+                  alt="immunity_9"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--footer하단태그-->
-</body>
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <p class="footer-logo">
+              copyrights &copy; Click dots 2023 with 병윤, 다현, 은우
+            </p>
+          </div>
+          <div class="footer-column">
+            <p class="footer-middle">Web Programming project</p>
+          </div>
+          <div class="footer-column">
+            <nav class="footer-links">
+              <a href="#!" class="footer-link">Privacy Policy</a>
+              <a href="#!" class="footer-link">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -14,6 +14,12 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+}
+
 .nav_text {
   text-decoration: none;
   color: #000000;
@@ -57,17 +63,11 @@ ol {
   font-size: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-}
-
 /* 나눠진 구역 스타일링 */
 #main-section {
   display: flex;
   height: calc(93vh - 80.8px);
-  padding-top: 80.8px; /* 세로로 2분할이 끊기는 지점 = nav바 하단*/
+  padding-top: 60.8px; /* 세로로 2분할이 끊기는 지점 = nav바 하단*/
 }
 
 .left-section {
@@ -80,7 +80,7 @@ a {
   flex-direction: column;
 }
 
-.bone-container {
+.eye-container {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -89,9 +89,9 @@ a {
 }
 
 /*좌측 영양제 종류bar 위치조정*/
-.bone-1,
-.bone-2,
-.bone-3 {
+.eye-1,
+.eye-2,
+.eye-3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,17 +109,16 @@ a {
 }
 
 /*좌측 영양제 종류 bar마우스 효과*/
-.bone-container > div {
+.eye-container > div {
   transition: background-color 0.6s ease; /* 트랜지션 속성 추가 */
 }
 
-.bone-container > div:hover {
+.eye-container > div:hover {
   background-color: rgba(71, 182, 95, 0.804); /* 진한 색상을 지정하세요 */
 }
-.bone-container > div.active {
+.eye-container > div.active {
   background-color: rgba(71, 182, 95, 0.804); /* 진한 색상을 지정하세요 */
 }
-
 /*정보영역 분할css*/
 .brief-info {
   display: flex;
@@ -132,7 +131,7 @@ a {
   border-right: 1px solid black;
   padding: 10px;
 }
-
+/*전반적인 설명 섹션*/
 .section {
   border: 1px solid black;
   padding: 10px;
@@ -187,7 +186,6 @@ a {
   font-family: "TTWanjunuricheR";
   letter-spacing: 0.05em;
 }
-
 /*footer css*/
 .footer {
   padding: 1rem 0;

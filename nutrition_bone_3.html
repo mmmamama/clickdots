@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="css/nutrition_bone.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition</title>
     <style>
       @font-face {
-      font-family: 'GongGothicMedium';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+        font-family: "GongGothicMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
       }
 
       @font-face {
-        font-family: 'TTWanjunuricheR';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+        font-family: "TTWanjunuricheR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2")
+          format("woff2");
         font-weight: normal;
         font-style: normal;
       }
     </style>
     <script src="nutrition_script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--navigation bar-->
     <nav id="nav2">
-        <a href="index.html" target="_blank">
-            <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
-        </a>
-        <ul>
-            <li><a href="#bod">신체</a></li>
-            <li><a href="checklist.html">필수접종 체크리스트</a></li>
-            <li><a href="nutrition.html">영양제</a></li>
-            <li><a href="exercise.html">운동</a></li>
-            <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
-        </ul>
+      <a href="index.html" target="blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지" />
+      </a>
+      <ul>
+        <li><a href="index.html#bod" class="nav_text">신체</a></li>
+        <li>
+          <a href="checklist.html" class="nav_text">필수접종 체크리스트</a>
+        </li>
+        <li><a href="nutrition.html" class="nav_text active">영양제</a></li>
+        <li>
+          <a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- 영양제icon -->
     <section id="main-section">
-        <div class="left-section">
-            <div class="bone-container">
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_1.html';" class="bone-1">
-                <p>칼슘 & 마그네슘</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_2.html';" class="bone-2">
-                  <p>보스웰리아</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_3.html';" class="bone-3">
-                <p>아연</p>
-              </div>
-            </div>
+      <div class="left-section">
+        <div class="bone-container">
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_1.html';"
+            class="bone-1"
+          >
+            <p>칼슘 & 마그네슘</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_2.html';"
+            class="bone-2"
+          >
+            <p>보스웰리아</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_3.html';"
+            class="bone-3 active"
+          >
+            <p>아연</p>
+          </div>
         </div>
-          <div class="right-section">
-            <div class="brief-info">
-              <div class="section">
-                <h3>복용효과</h3>
-                <br><br>
-                <p>
-                  1. 골다공증 예방<br><br>
-                  2. 면역체계 유지<br><br>
-                  3. 항염증 및 항산화제 역할 수행<br><br>
-                  4. 전립선 문제 및 질환 예방<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>추천대상</h3>
-                <br><br>
-                <p>
-                  1. 성장기 어린이<br><br>
-                  2. 고강도 운동을 즐겨하는 분<br><br>
-                  3. 전립선으로 고민하는 50대 남성<br><br>
-                  4. 여드름 및 피부로 고민하는 학생<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>주의사항</h3>
-                <br><br>
-                <p>
-                  1. 과복용시 위장질환, 혈뇨 발생 가능<br><br>
-                  2. 무기력, 피로 유발 가능<br><br>
-                  3. 부정맥 및 빈혈 생성 가능<br><br>
-                  4. 결핍시 남성의 경우 성기능 저하<br><br>
-                </p>
-              </div>
-            </div>
-            <div class="product-container">
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/gGHl" target="_blank">
-                        <img src="media/nutrition/zinc_1.png" alt="zinc_1" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/BXQq" target="_blank">
-                        <img src="media/nutrition/zinc_2.png" alt="zinc_2" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/GoeS" target="_blank">
-                        <img src="media/nutrition/zinc_3.png" alt="zinc_3" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
+      </div>
+      <div class="right-section">
+        <div class="brief-info">
+          <div class="section">
+            <h3>복용효과</h3>
+            <br /><br />
+            <p>
+              1. 골다공증 예방<br /><br />
+              2. 면역체계 유지<br /><br />
+              3. 항염증 및 항산화제 역할 수행<br /><br />
+              4. 전립선 문제 및 질환 예방<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>추천대상</h3>
+            <br /><br />
+            <p>
+              1. 성장기 어린이<br /><br />
+              2. 고강도 운동을 즐겨하는 분<br /><br />
+              3. 전립선으로 고민하는 50대 남성<br /><br />
+              4. 여드름 및 피부로 고민하는 학생<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>주의사항</h3>
+            <br /><br />
+            <p>
+              1. 과복용시 위장질환, 혈뇨 발생 가능<br /><br />
+              2. 무기력, 피로 유발 가능<br /><br />
+              3. 부정맥 및 빈혈 생성 가능<br /><br />
+              4. 결핍시 남성의 경우 성기능 저하<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/gGHl" target="_blank">
+                <img
+                  src="media/nutrition/zinc_1.png"
+                  alt="zinc_1"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
             </div>
           </div>
-          
-      </section>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/BXQq" target="_blank">
+                <img
+                  src="media/nutrition/zinc_2.png"
+                  alt="zinc_2"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/GoeS" target="_blank">
+                <img
+                  src="media/nutrition/zinc_3.png"
+                  alt="zinc_3"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--footer하단태그-->
-</body>
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <p class="footer-logo">
+              copyrights &copy; Click dots 2023 with 병윤, 다현, 은우
+            </p>
+          </div>
+          <div class="footer-column">
+            <p class="footer-middle">Web Programming project</p>
+          </div>
+          <div class="footer-column">
+            <nav class="footer-links">
+              <a href="#!" class="footer-link">Privacy Policy</a>
+              <a href="#!" class="footer-link">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

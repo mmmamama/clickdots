@@ -1,168 +1,221 @@
-/* nav바 */
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
 #logo {
-    height: 70px;
-    width: auto;
-    padding-top: 10px;
-    position: fixed;
+  height: 70px;
+  width: auto;
+  padding-top: 10px;
+  position: fixed;
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
+}
+
+.nav_text {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-family: "TTWanjunuricheR";
+}
+
+.nav_text:hover {
+  color: #269402;
+}
+
+.nav_text.active {
+  color: #269402;
+}
+
+#nav2 {
+  background-color: #ffffff;
+  height: 80.8px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+#nav2 > a {
+  display: block; /* a태그는 글자성격 = inline */
+  float: left;
+  line-height: 80px;
+  padding: 0px;
+  height: 100px;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 15px;
-}
-#nav2{
-    background-color: white;
-    height: 80.8px;
-    width: 100%;
-    position: fixed;
-}
-#nav2 > a {
-    display: block;
-    float: left;
-    line-height: 80px;
-    padding: 0px;
-    height: 100px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
 }
 
 #nav2 > ul {
-    float: right;
-    right: 20px;
+  float: right;
+  right: 20px;
 }
 
 #nav2 > ul li {
-    float: left;
-    padding: 0 30px;
-    line-height: 80px;
+  float: left;
+  padding: 0 30px;
+  line-height: 80px;
+  font-size: 10px;
 }
 
 /* 나눠진 구역 스타일링 */
 #main-section {
   display: flex;
-  height: calc(100vh - 80.8px);
+  height: calc(93vh - 80.8px);
   padding-top: 80.8px; /* 세로로 2분할이 끊기는 지점 = nav바 하단*/
 }
 
 .left-section {
   flex-basis: calc(50% - 25%); /* 가로로 3분할을 위해 50% - 1px 너비 할당 */
-  border: 1px solid black; /* 왼쪽과 오른쪽 구분을 위한 실선 추가 */
 }
 
 .right-section {
-    flex-grow: 1; /* 남은 공간을 차지하여 우측 내용이 채워지도록 설정 */
-    border-top: 1px solid black;
-    display: flex;
-    flex-direction: column;
+  flex-grow: 1; /* 남은 공간을 차지하여 우측 내용이 채워지도록 설정 */
+  display: flex;
+  flex-direction: column;
 }
 
 .virus-container {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 /*좌측 영양제 종류bar 위치조정*/
 .virus-1,
 .virus-2,
 .virus-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 15px;
-    text-align: center;
-    height: 150px;
-    width: 300px;
-    font-size: 33px;
-    font-family: 'GongGothicMedium';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  height: 150px;
+  width: 300px;
+  font-size: 33px;
+  font-family: "GongGothicMedium";
 }
 
 /*좌측 영양제 종류 bar마우스 효과*/
 .virus-container > div {
-    transition: background-color 0.6s ease; /* 트랜지션 속성 추가 */
-}
-  
-.virus-container > div:hover {
-    background-color: rgba(71, 182, 95, 0.804); /* 진한 색상을 지정하세요 */
+  transition: background-color 0.6s ease; /* 트랜지션 속성 추가 */
 }
 
+.virus-container > div:hover {
+  background-color: rgba(71, 182, 95, 0.804); /* 진한 색상을 지정하세요 */
+}
+
+.virus-container > div.active {
+  background-color: rgba(71, 182, 95, 0.804); /* 진한 색상을 지정하세요 */
+}
 /*정보영역 분할css*/
 .brief-info {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-  }
-  
-  .brief-info > div {
-    flex-basis: 33.33%;  /*동일한 너비로 분할*/
-    border-right: 1px solid black;
-    padding: 10px;
-  }
-  
-  .section {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
 
- /*하단 상품추천 영역분할css*/ 
+.brief-info > div {
+  flex-basis: 33.33%; /*동일한 너비로 분할*/
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.section {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/*하단 상품추천 영역분할css*/
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-  }
-  
-  .product-item {
-    flex-basis: calc(33.33% - 20px);
-    margin: 10px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;
-  }
-  
-  .product-content {
-    text-align: center;
-    height: 200px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
 
-  .product-content img {
-    max-width: 100%;
-    max-height: 100%;
-  }
- 
-  /*글씨체 css*/
+.product-item {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+}
+
+.product-content {
+  text-align: center;
+  height: 200px;
+}
+
+.product-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*글씨체 css*/
 .section h3 {
   margin-top: 2rem;
   margin-bottom: 0;
   font-size: 31.275px;
-  font-family: 'GongGothicMedium';
+  font-family: "GongGothicMedium";
   letter-spacing: 0.05em;
 }
-  
+
 .section p {
   margin-top: 2rem;
   margin-bottom: 0;
   font-size: 20px;
-  font-family: 'TTWanjunuricheR';
+  font-family: "TTWanjunuricheR";
   letter-spacing: 0.05em;
 }
-   
+/*footer css*/
+.footer {
+  padding: 1rem 0;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "TTWanjunuricheR";
+}
+.footer-column {
+  flex: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-link {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}

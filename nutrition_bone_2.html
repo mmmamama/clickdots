@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="css/nutrition_bone.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition</title>
     <style>
       @font-face {
-      font-family: 'GongGothicMedium';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
+        font-family: "GongGothicMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
       }
 
       @font-face {
-        font-family: 'TTWanjunuricheR';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2') format('woff2');
+        font-family: "TTWanjunuricheR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjunuricheR.woff2")
+          format("woff2");
         font-weight: normal;
         font-style: normal;
       }
     </style>
     <script src="nutrition_script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--navigation bar-->
     <nav id="nav2">
-        <a href="index.html" target="_blank">
-            <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지">
-        </a>
-        <ul>
-            <li><a href="#bod">신체</a></li>
-            <li><a href="checklist.html">필수접종 체크리스트</a></li>
-            <li><a href="nutrition.html">영양제</a></li>
-            <li><a href="exercise.html">운동</a></li>
-            <li><a href="hospital.html">근처 병원,약국 찾기</a></li> 
-        </ul>
+      <a href="index.html" target="blank">
+        <img id="logo" src="media/logo/clickdots_logo.png" alt="로고이미지" />
+      </a>
+      <ul>
+        <li><a href="index.html#bod" class="nav_text">신체</a></li>
+        <li>
+          <a href="checklist.html" class="nav_text">필수접종 체크리스트</a>
+        </li>
+        <li><a href="nutrition.html" class="nav_text active">영양제</a></li>
+        <li>
+          <a href="hospital.html" class="nav_text">근처 병원,약국 찾기</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- 영양제icon -->
     <section id="main-section">
-        <div class="left-section">
-            <div class="bone-container">
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_1.html';" class="bone-1">
-                <p>칼슘 & 마그네슘</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_2.html';" class="bone-2">
-                  <p>보스웰리아</p>
-              </div>
-              <div style="cursor: pointer;" onclick="location.href='nutrition_bone_3.html';" class="bone-3">
-                <p>아연</p>
-              </div>
-            </div>
+      <div class="left-section">
+        <div class="bone-container">
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_1.html';"
+            class="bone-1"
+          >
+            <p>칼슘 & 마그네슘</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_2.html';"
+            class="bone-2 active"
+          >
+            <p>보스웰리아</p>
+          </div>
+          <div
+            style="cursor: pointer"
+            onclick="location.href='nutrition_bone_3.html';"
+            class="bone-3"
+          >
+            <p>아연</p>
+          </div>
         </div>
-          <div class="right-section">
-            <div class="brief-info">
-              <div class="section">
-                <h3>복용효과</h3>
-                <br><br>
-                <p>
-                  1. 풍부한 항산화 성분 함유<br><br>
-                  2. 염증 반응을 조절해 관절염 도움<br><br>
-                  3. 호르몬 조절을 도움<br><br>
-                  4. 면역력을 높여 각종 감염에 대응<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>추천대상</h3>
-                <br><br>
-                <p>
-                  1. 진정과 스트레스 완화가 필요한 분<br><br>
-                  2. 관절통을 겪고있는 노인 또는 어르신<br><br>
-                  3. 알레르기 증상을 완화하고 싶은 분<br><br>
-                  4. 소화관련 장 질환을 겪고 있는 분<br><br>
-                </p>
-              </div>
-              <div class="section">
-                <h3>주의사항</h3>
-                <br><br>
-                <p>
-                  1. 임산부 대상 연구 부족<br><br>
-                  2. 수유부 대상 연구 부족<br><br>
-                  3. 수술 전후 지혈을 늦출 수 있음<br><br>
-                  4. 드물게 메스꺼움, 구토 증상 확인<br><br> 
-                </p>
-              </div>
-            </div>
-            <div class="product-container">
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/UKBU" target="_blank">
-                        <img src="media/nutrition/boswell_1.png" alt="boswell_1" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/Ri3F" target="_blank">
-                        <img src="media/nutrition/boswell_2.png" alt="boswell_2" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
-              <div class="product-item">
-                <div class="product-content">
-                    <a href="https://zrr.kr/aqxK" target="_blank">
-                        <img src="media/nutrition/boswell_3.png" alt="boswell_3" height="190px" width=auto>
-                      </a>
-                </div>
-              </div>
+      </div>
+      <div class="right-section">
+        <div class="brief-info">
+          <div class="section">
+            <h3>복용효과</h3>
+            <br /><br />
+            <p>
+              1. 풍부한 항산화 성분 함유<br /><br />
+              2. 염증 반응을 조절해 관절염 도움<br /><br />
+              3. 호르몬 조절을 도움<br /><br />
+              4. 면역력을 높여 각종 감염에 대응<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>추천대상</h3>
+            <br /><br />
+            <p>
+              1. 진정과 스트레스 완화가 필요한 분<br /><br />
+              2. 관절통을 겪고있는 노인 또는 어르신<br /><br />
+              3. 알레르기 증상을 완화하고 싶은 분<br /><br />
+              4. 소화관련 장 질환을 겪고 있는 분<br /><br />
+            </p>
+          </div>
+          <div class="section">
+            <h3>주의사항</h3>
+            <br /><br />
+            <p>
+              1. 임산부 대상 연구 부족<br /><br />
+              2. 수유부 대상 연구 부족<br /><br />
+              3. 수술 전후 지혈을 늦출 수 있음<br /><br />
+              4. 드물게 메스꺼움, 구토 증상 확인<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/UKBU" target="_blank">
+                <img
+                  src="media/nutrition/boswell_1.png"
+                  alt="boswell_1"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
             </div>
           </div>
-          
-      </section>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/Ri3F" target="_blank">
+                <img
+                  src="media/nutrition/boswell_2.png"
+                  alt="boswell_2"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-content">
+              <a href="https://zrr.kr/aqxK" target="_blank">
+                <img
+                  src="media/nutrition/boswell_3.png"
+                  alt="boswell_3"
+                  height="190px"
+                  width="auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--footer하단태그-->
-</body>
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <p class="footer-logo">
+              copyrights &copy; Click dots 2023 with 병윤, 다현, 은우
+            </p>
+          </div>
+          <div class="footer-column">
+            <p class="footer-middle">Web Programming project</p>
+          </div>
+          <div class="footer-column">
+            <nav class="footer-links">
+              <a href="#!" class="footer-link">Privacy Policy</a>
+              <a href="#!" class="footer-link">Terms of Use</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
